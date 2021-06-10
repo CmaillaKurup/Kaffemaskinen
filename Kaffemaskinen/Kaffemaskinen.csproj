@@ -45,6 +45,7 @@
         <Compile Include="Interfaces\IFillBeans.cs" />
         <Compile Include="Interfaces\IFillWater.cs" />
         <Compile Include="Interfaces\IInsertFilter.cs" />
+        <Compile Include="MakeCoffee.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
