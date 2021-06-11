@@ -5,7 +5,10 @@ namespace Kaffemaskinen
     //This class will be responsible of inserting filters at the machine
     public class InsertFilter : IInsertFilter
     {
-        public bool CheckForFilter()
+        private bool filter = false;
+
+
+        public void FilterIn()
         {
             throw new System.NotImplementedException();
         }

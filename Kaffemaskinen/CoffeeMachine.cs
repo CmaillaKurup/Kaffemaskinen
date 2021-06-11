@@ -1,23 +1,42 @@
-using Kaffemaskinen.Interfaces;
-
 //This is my machine
 namespace Kaffemaskinen
 {
-    public class CoffeeMachine : IFillBeans, IFillWater, IInsertFilter
+    public class CoffeeMachine
     {
-        public bool CheckForBeans()
+        private bool beans;
+        private bool water;
+        private bool filter;
+        private bool electricity;
+        private bool button;
+
+        //incapsulation
+        public bool Beans
         {
-            throw new System.NotImplementedException();
+            get => beans;
+            set => beans = value;
+        }
+        public bool Water
+        {
+            get => water;
+            set => water = value;
         }
 
-        public bool CheckForWater()
+        public bool Filter
         {
-            throw new System.NotImplementedException();
+            get => filter;
+            set => filter = value;
         }
 
-        public bool CheckForFilter()
+        public bool Electricity
         {
-            throw new System.NotImplementedException();
+            get => electricity;
+            set => electricity = value;
+        }
+
+        public bool Button
+        {
+            get => button;
+            set => button = value;
         }
     }
 }
